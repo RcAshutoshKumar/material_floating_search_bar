@@ -651,7 +651,7 @@ class FloatingSearchBarState
             padding: EdgeInsets.only(top: padding.top, bottom: padding.bottom),
             alignment: Alignment.center,
             decoration: BoxDecoration(
-              color: transition.lerpBackgroundColor(),
+              color: Colors.red,
               border: Border.fromBorderSide(style.border),
               borderRadius: borderRadius,
             ),
@@ -695,7 +695,7 @@ class FloatingSearchBarState
       height: 1000,
       elevation: 0.0,
       controller: widget.controller,
-      color: transition.lerpBackgroundColor(),
+      color: Colors.pink,
       onFocusChanged: (isFocused) {
         isOpen = isFocused;
         widget.onFocusChanged?.call(isFocused);
@@ -708,7 +708,7 @@ class FloatingSearchBarState
       autocorrect: widget.autocorrect,
       clearQueryOnClose: widget.clearQueryOnClose,
       debounceDelay: widget.debounceDelay,
-      hint: widget.hint,
+      hint: "Test",
       onQueryChanged: widget.onQueryChanged,
       onSubmitted: widget.onSubmitted,
       progress: widget.progress,
@@ -836,10 +836,10 @@ class FloatingSearchBarState
       openMaxWidth: widget.openWidth,
       axisAlignment: widget.axisAlignment ?? 0.0,
       openAxisAlignment: widget.openAxisAlignment ?? widget.axisAlignment ?? 0.0,
-      backgroundColor: widget.backgroundColor ?? theme.cardColor,
+      backgroundColor: Colors.yellow,
       shadowColor: widget.shadowColor ?? Colors.black45,
       backdropColor:
-          widget.backdropColor ?? widget.transition?.backdropColor ?? Colors.black26,
+          Colors.indigo,
       border: widget.border ?? BorderSide.none,
       borderRadius: widget.borderRadius ?? BorderRadius.circular(4),
       margins: (widget.margins ??
