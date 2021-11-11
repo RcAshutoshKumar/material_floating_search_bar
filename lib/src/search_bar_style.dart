@@ -137,7 +137,7 @@ class FloatingSearchAppBarStyle {
       liftOnScrollElevation:
           lerpDouble(liftOnScrollElevation, b.liftOnScrollElevation, t)!,
       accentColor: Color.lerp(accentColor, b.accentColor, t)!,
-      backgroundColor: Color.lerp(backgroundColor, b.backgroundColor, t)!,
+      backgroundColor: Colors.red,
       colorOnScroll: Color.lerp(colorOnScroll, b.colorOnScroll, t),
       shadowColor: Color.lerp(shadowColor, b.shadowColor, t)!,
       iconColor: Color.lerp(iconColor, b.iconColor, t)!,
